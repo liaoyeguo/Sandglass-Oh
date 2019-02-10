@@ -1,0 +1,93 @@
+html,
+body {
+  width: 240px;
+  padding: 0;
+  margin: 0;
+}
+.app {
+  width: 240px;
+  font-family: Helvetica, "Segoe UI", Tahoma, Arial, "Hiragino Sans GB",
+    "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 12px;
+  color: #4e585e;
+  overflow: hidden;
+  margin: 0;
+  background: white;
+  height: 200px;
+  overflow: hidden;
+}
+.header {
+  padding: 6px 16px;
+  /* background: #f9f9f9; */
+}
+.header .logo {
+  width: 16px;
+  margin: auto;
+  line-height: 1;
+}
+.main {
+  background: #fc6f80;
+  background: linear-gradient(to right bottom, #fc6f80, #f5c49d 120%);
+  padding: 8px;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+}
+.timer {
+  margin-top: 24px;
+}
+.timer .number {
+  font-size: 32px;
+  user-select: none;
+}
+
+.toolbox {
+  z-index: 500;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 16px;
+}
+.slider-wrapper {
+  padding-bottom: 0px;
+  margin-top: 12px;
+}
+.slider-wrapper .slider {
+  margin: 0;
+}
+.progress-wrapper {
+  height: 40px;
+  /* padding: 16px; */
+  margin-top: 12px;
+  padding-bottom: 0px;
+}
+.progress-wrapper .progress {
+  height: 12px;
+  display: block;
+  line-height: 1;
+}
+.btn-wrapper {
+  text-align: center;
+  margin: 8px;
+}
+.btn-wrapper .btn {
+  text-align: center;
+  border: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+.btn-wrapper .btn.round {
+  border-radius: 16px;
+}
+.btn-wrapper .active.btn {
+  background: #fc6f80;
+}
+.btn-wrapper .btn-group {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.btn-wrapper .active.btn:hover {
+  color: white;
+  box-shadow: rgba(255, 144, 153, 0.6) 0 3px 20px -1px;
+  transition: box-shadow ease-out 0.2s;
+}

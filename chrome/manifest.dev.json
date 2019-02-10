@@ -1,23 +1,29 @@
 {
-  "version": "0.0.0",
-  "name": "react-chrome-extension-example",
+  "version": "1.0.0",
+  "name": "Sandglass!",
   "manifest_version": 2,
-  "description": "Example for react-chrome-extension-boilerplate",
+  "description": "Sandglass! is a simple Pomodoro timer",
   "browser_action": {
-    "default_title": "React Chrome Extension Example",
+    "default_title": "click to focus",
     "default_popup": "popup.html"
   },
   "icons": {
-    "16": "img/icon-16.png",
-    "48": "img/icon-48.png",
-    "128": "img/icon-128.png"
+    "16": "img/logo-16.png",
+    "48": "img/logo-48.png",
+    "128": "img/logo-128.png"
   },
-  "web_accessible_resources": [
-    "inject.html"
-  ],
   "background": {
-    "page": "background.html"
+    "page": "background.html",
+    "persistent": false
   },
-  "permissions": [ "contextMenus", "management", "tabs", "storage", "https://github.com/*" ],
+  "permissions": [
+    "contextMenus",
+    "management",
+    "tabs",
+    "storage",
+    "https://github.com/*",
+    "alarms",
+    "notifications"
+  ],
   "content_security_policy": "default-src 'self'; script-src 'self' http://localhost:3000 https://localhost:3000 'unsafe-eval'; connect-src http://localhost:3000 https://localhost:3000; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data:;"
 }
