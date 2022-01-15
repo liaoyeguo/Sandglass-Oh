@@ -42,7 +42,7 @@
     "babel-runtime": "^6.26.0",
     "chromedriver": "^2.38.3",
     "less-loader": "^4.1.0",
-    "shelljs": "^0.8.2",
+    "shelljs": "^0.8.5",
     "webpack": "^3.10.0",
     "webpack-hot-middleware": "^2.10.0",
     "webpack-httpolyglot-server": "^0.3.0",
